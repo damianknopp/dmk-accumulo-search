@@ -43,6 +43,7 @@ Verify the write
 - Verify the processeses are running
 	jps
 - Verify accumulo is running by visiting the accumulo shell
+>
 	acshell
 
 - Create tables and index data, https://github.com/damianknopp/dmk-accumulo-indexer
@@ -51,11 +52,13 @@ Verify the write
 	./runIndexer.sh test.txt
 	./runIndexer.sh test2.txt
 - Verify in accumulo shell
+>
 	acsehll
 	tables (verify invertedIndex exists)
 	scan -t invertedIndex
 
-- Finally bring up te grails webapp
-	grails test run-app
+- Finally bring up the grails webapp
+	> grails test run-app
 - Visit the page listed,
+>
 	http://localhost:8080/accumulo-test/main/index
