@@ -1,0 +1,74 @@
+/** remove browser defaults for padding*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background-color: #e8e8e8;
+	margin-top: 5px;
+	padding-top: 2px;
+}
+
+.subHeader{
+	background-color: #eee;
+}
+
+.appTitle{
+	font-size: 1.4em;
+}
+
+.rightHeader{
+	float:right;
+}
+
+.leftHeader{
+	float:left;
+}
+
+.leftHeader a:link {
+	text-decoration: none
+}
+.leftHeader a:visited {
+	text-decoration: none
+}
+.leftHeader a:active {
+	text-decoration: none
+}
+.leftHeader a:hover {
+	text-decoration: underline overline; color: red;
+}
+.leftHeader a.currentPageLink{
+	font-color: red;
+	text-decoration: underline;
+}
+
+.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.reduceWidth{
+	width:80%;
+}
+
+.clear{
+	clear:both;
+}
+
+.header ul{
+	list-style-type: none;
+	margin: auto;
+	width:100%;
+}
+
+.header ul li{
+	float:left;
+}
+
+
+/** forms **/
+.focus {
+    border: 2px solid #aa88ff;
+    background-color: #ffeeaa;
+}

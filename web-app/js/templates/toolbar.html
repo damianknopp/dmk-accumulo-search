@@ -1,0 +1,20 @@
+<div class="header">
+	<span class="leftHeader" style="width:80%">
+		<form>
+			<input type="text" value="<%=curText%>"></input>
+			<button>Search</button>
+		</form>
+	</span>
+	<span class="rightHeader appTitle" style="width:20%">Documents Store</span>
+	<span class="subHeader leftHeader center" style="clear:left;width:100%">
+		<ul>
+			<li>
+				<a href="#home" class="<%=_.isEqual(curLink, 'home') ? 'currentPageLink' : ''%>">home</a>&nbsp;|&nbsp;
+			</li>
+			<li>
+				<a href="#documents/search" class="<%=_.isEqual(curLink, 'search') ? 'currentPageLink' : ''%>">search</a>
+			</li>
+		</ul>
+	</span> 
+</div>
+<div class="clear"><br/></div>

@@ -1,0 +1,18 @@
+<%if(_.isUndefined(docSummaries) || _.isNull(docSummaries) || !_.isArray(docSummaries) ){%>
+	throw "expected an Array of document summaries but found " + (typeof docSummaries);
+<%}%>
+<%if(docSummaries.length >= 1){%>
+	<div>Found <%=docSummaries.length%> results.</div>
+	<br/>
+<% _.each(docSummaries, function(summary){ %>
+		<span class="title">
+			<h4>
+				<%=summary.get("title")%>
+			</h4>
+		</span>
+		<span><%=summary.get("dtg")%> &nbsp; <%=summary.get("name")%> &nbsp; <%=summary.get("uri")%></span>
+		<br/>
+<% }); %>
+<%}else{%>
+	<div>No documents summaries to show.</div>
+<%}%>
